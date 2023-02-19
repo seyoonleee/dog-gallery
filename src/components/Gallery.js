@@ -24,7 +24,7 @@ const Gallery = () => {
   // useQuery 함수는 data, error, isLoading ....등의 키값을 가진 객체를 반환한다.
   // useQuery함수의 반환값에서 필요한 데이터 구조분해할당으로 초기화
   // const { isLoading, error, data }
-  const res = useQuery(['dogImageData'], fetchDogImg, {
+  const res = useQuery(['dogImageData', isFetching], fetchDogImg, {
     suspense: true,
     useErrorBoundary: true,
   });
