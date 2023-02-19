@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = ({ urls }) => {
-  console.log('Wrapper Render!!!');
+  const [dogImage1, dogImage2] = urls;
 
   return (
     <Container>
-      <img src={urls[0]} alt="dogImage" />
-      <img src={urls[1]} alt="dogImage" />
+      <img src={dogImage1} alt="dogImage" />
+      <img src={dogImage2} alt="dogImage" />
     </Container>
   );
 };
